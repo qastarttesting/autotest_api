@@ -21,9 +21,9 @@ jobs:
 
       - name: Test
         run: mvn clean test -Denv=stand
-        
-     - name: Artifact
+
+      - name: Archive code coverage results
         uses: actions/upload-artifact@v3
         with:
-          name: allure
+          name: code-coverage-report
           path: target/allure-results
