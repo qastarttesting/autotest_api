@@ -15,4 +15,4 @@ steps:
       distribution: 'temurin'
 
   - name: Build with Maven
-    run: mvn --batch-mode --update-snapshots package
+    run: mvn clean test -Denv=stand
