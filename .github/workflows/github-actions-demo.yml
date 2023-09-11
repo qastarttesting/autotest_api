@@ -21,3 +21,9 @@ jobs:
 
       - name: Test
         run: mvn clean test -Denv=stand
+        
+     - name: Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure
+          path: target/allure-results
